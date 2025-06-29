@@ -1,32 +1,59 @@
 # 🕵️ Fake Review Detection using Machine Learning
 
-This project aims to detect fake (spam) product reviews using Natural Language Processing (NLP) and classification algorithms. It analyzes review text and classifies whether it is genuine or deceptive based on patterns learned from the data.
+This project aims to detect fake (spam) product reviews using Natural Language Processing (NLP) and machine learning classification algorithms. It analyzes review text and classifies whether it is genuine or deceptive based on patterns learned from the data.
+
+---
+
+## 📋 Table of Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Dataset](#dataset)
+- [Setup & Usage](#setup--usage)
+- [Results](#results)
+- [Future Improvements](#future-improvements)
+- [Author](#author)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
+---
 
 ## 📌 Features
 
-- 🔍 Detects fake vs genuine reviews using machine learning
-- 🧠 Uses NLP techniques like TF-IDF vectorization
-- 📊 Model training and evaluation using Scikit-learn
-- 📈 Performance metrics: accuracy, confusion matrix, precision & recall
-- 📝 Clean and well-documented Jupyter notebook or Python script
+- 🔍 Detects fake vs genuine product reviews using supervised ML
+- 🧠 NLP processing with TF-IDF vectorization
+- 🏗️ Clean architecture with modular Python scripts
+- 📈 Metrics: Accuracy, Precision, Recall, F1-Score
+- 💾 Saved trained model using `joblib` and `pickle`
+- 🎛️ Simple text-based interface to test predictions
+
+---
 
 ## 🧰 Tech Stack
 
 - Python 3.x
-- Pandas & NumPy
+- Pandas, NumPy
 - Scikit-learn
-- Matplotlib & Seaborn
-- PyCharm IDE
+- Matplotlib, Seaborn
+- PyCharm (or any Python IDE)
+
+---
 
 ## 📂 Dataset
 
-- The dataset contains labeled product reviews as either `deceptive` or `truthful`.
-- Features are extracted from the review text using TF-IDF (Term Frequency–Inverse Document Frequency).
+- The dataset consists of product reviews labeled as either **deceptive** or **truthful**
+- Preprocessing is done using NLP techniques like:
+  - Tokenization
+  - Stopword removal
+  - TF-IDF vectorization
 
-## 🚀 How to Run the Project
+> Source: Synthetic/spam review datasets (Ott et al. – Cornell)
 
-1. Clone the repository:
+---
 
+## 🚀 Setup & Usage
+
+1. **Clone the repository:**
    ```bash
    git clone git@github.com:parth4673/fake-review-detector.git
    cd fake-review-detector
